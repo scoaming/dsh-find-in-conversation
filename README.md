@@ -27,7 +27,12 @@ DeepSeek Harness（DSH）插件：在一个会话的问答记录里按关键字�
 dsh plugin --profile desktop add github:scoaming/dsh-find-in-conversation
 ```
 
-安装后重启 DSH，再到 设置 → 插件 里确认「会话内查找」已启用。
+装完要两步才能生效：
+
+1. 重启 DSH；
+2. 打开 设置 → 插件（或侧边栏「插件」面板），在已安装列表里找到「会话内查找」，点**启用**。
+
+之后在任意会话里按 `Ctrl+F` 就会出现查找条。
 
 本地目录方式：
 
