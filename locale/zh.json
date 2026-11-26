@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "会话内查找",
+    "description": "按 Ctrl+F 在当前会话里搜索关键字，并在命中处之间跳转。",
+    "detail": "docs/DETAIL.md"
+  }
+}

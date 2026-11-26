@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Find in Conversation",
+    "description": "Press Ctrl+F to search inside the current conversation and jump between matches.",
+    "detail": "docs/DETAIL.md"
+  }
+}

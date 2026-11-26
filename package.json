@@ -1,0 +1,48 @@
+{
+  "name": "dsh-find-in-conversation",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Ctrl+F find bar that searches the current conversation and jumps between matches.",
+  "license": "MIT",
+  "author": "scoaming",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scoaming/dsh-find-in-conversation.git"
+  },
+  "homepage": "https://github.com/scoaming/dsh-find-in-conversation#readme",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "search",
+    "find"
+  ],
+  "engines": {
+    "node": ">=22.6"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "docs",
+    "icon.svg"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-layout"
+      ]
+    }
+  }
+}
